@@ -39,7 +39,7 @@ export default class App extends Component {
     .then((cats) => {
       this.setState({isLookingUp: false, cats})
     })
-    .then((error) => {
+    .catch((error) => {
       this.setState({isLookingUp: false, error: error.message})
     })
   }
