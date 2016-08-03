@@ -4,6 +4,8 @@ This is a React application seeing a grid of Cats and associated facts!
 
 This app is built using React in ES6.
 
+Circle Ci Status: [![CircleCI](https://circleci.com/gh/GordyD/cats.svg?style=svg)](https://circleci.com/gh/GordyD/cats)
+
 ### Set-up
 
 *N.B You will need to ensure you have node 6+ on your machine.*
