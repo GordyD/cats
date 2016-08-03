@@ -2,9 +2,7 @@
 
 This is a React application seeing a grid of Cats and associated facts!
 
-This app is built using React in ES6.
-
-Circle Ci Status: [![CircleCI](https://circleci.com/gh/GordyD/cats.svg?style=svg)](https://circleci.com/gh/GordyD/cats)
+This app is built using React and Redux in ES6.
 
 ### Set-up
 
@@ -18,6 +16,12 @@ npm start
 ```
 
 then open http://localhost:3001 in your browser of choice!
+
+### Circle CI
+
+Circle CI has been set up to perform automated linting and testing. You can see the status of the latest build of the master branch below:
+
+[![CircleCI](https://circleci.com/gh/GordyD/cats.svg?style=svg)](https://circleci.com/gh/GordyD/cats)
 
 ### Testing
 
