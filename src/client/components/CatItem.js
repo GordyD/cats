@@ -9,8 +9,9 @@ import './CatItem.styl'
  * a component that renders based on what it is passed as props.
  */
 const CatItem = (props) => <div className='CatItem-container'>
-  <a href={props.url} target='_blank'><img src={props.imageUrl} alt={` Cat ${props.id}`} /></a>
-  <p>{props.description || <span className='NoDescription'>No Description</span>}</p>
+  <a className='CatItem-link' href={props.url} target='_blank'><img className='CatItem-image' src={props.imageUrl} alt={` Cat ${props.id}`} /></a>
+  <p className='CatItem-description'>{props.description || <span className='NoDescription'>No Description</span>}</p>
+  <button className='CatItem-remove' onClick={() => props.onRemoveClicked(props)}>Remove</button>
 </div>
 
 /**
@@ -18,7 +19,8 @@ const CatItem = (props) => <div className='CatItem-container'>
  */
 CatItem.propTypes = {
   description: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired
+  imageUrl: PropTypes.string.isRequired,
+  onRemoveClicked: PropTypes.func.isRequired
 }
 
 export default CatItem
